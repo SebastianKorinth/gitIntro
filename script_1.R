@@ -8,4 +8,4 @@ ab.df$color[1:50] <- "red"
 
 ggplot(data = ab.df, aes(x = a, y = b, group = color)) +
   geom_line(aes(color = color)) +
-  geom_point()
+  geom_point(aes(size = b))
